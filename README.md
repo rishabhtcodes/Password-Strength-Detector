@@ -2,7 +2,7 @@
 
 A full-stack web application that analyzes password strength in real-time, estimates crack time, and stores analysis results in MongoDB.
 
-![Built with React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
+![Built with React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-06B6D4?logo=tailwindcss)
 ![Express](https://img.shields.io/badge/Express-5-000000?logo=express)
@@ -22,6 +22,12 @@ A full-stack web application that analyzes password strength in real-time, estim
 
 ```
 root/
+├── api/            # Vercel Serverless Functions
+│   ├── _lib/
+│   │   └── passwordStrength.js
+│   └── password/
+│       ├── check.js
+│       └── history.js
 ├── client/         # React + Vite + TailwindCSS
 │   └── src/
 │       ├── components/
@@ -45,6 +51,7 @@ root/
 │   ├── utils/
 │   │   └── passwordStrength.js
 │   └── server.js
+├── vercel.json     # Vercel Deployment Configuration
 └── README.md
 ```
 

@@ -3,7 +3,7 @@ const PasswordAnalysis = require("../models/PasswordAnalysis");
 
 /**
  * POST /api/password/check
- * Analyze a password, save to DB, return results.
+ * Analyze a password, save metadata to DB (never the raw password), return results.
  */
 async function checkPassword(req, res) {
   try {
@@ -15,9 +15,9 @@ async function checkPassword(req, res) {
 
     const result = analyzePassword(password);
 
-    // Save analysis to MongoDB
+    // Save analysis to MongoDB — only metadata, never the raw password
     const analysis = new PasswordAnalysis({
-      password,
+      passwordLength: password.length,
       score: result.score,
       strength: result.strength,
       crackTime: result.crackTime,
@@ -39,7 +39,7 @@ async function checkPassword(req, res) {
 
 /**
  * GET /api/password/history
- * Retrieve recent password analysis history.
+ * Retrieve recent password analysis history (no raw passwords).
  */
 async function getHistory(req, res) {
   try {

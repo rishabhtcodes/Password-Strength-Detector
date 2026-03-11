@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const passwordAnalysisSchema = new mongoose.Schema({
-  password: { type: String, required: true },
+  passwordLength: { type: Number, required: true },
   score: { type: Number, required: true },
   strength: { type: String, required: true },
   crackTime: { type: String, required: true },

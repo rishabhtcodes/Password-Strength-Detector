@@ -1,0 +1,12 @@
+{
+  "name": "password-strength-detector-vercel",
+  "version": "1.0.0",
+  "description": "Vercel deployment dependencies and scripts",
+  "main": "api/index.js",
+  "scripts": {
+    "build": "cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "mongoose": "^8.2.1"
+  }
+}

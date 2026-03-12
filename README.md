@@ -69,27 +69,18 @@ git clone https://github.com/rishabhtcodes/Password-Strength-Detector.git
 cd Password-Strength-Detector
 ```
 
-### 2. Start the backend
+### 2. Start the application
+
+A single command starts both the frontend and backend servers concurrently:
 
 ```bash
-cd server
 npm install
 npm run dev
 ```
 
-The server will start on `http://localhost:5000`.
+The frontend will start on `http://localhost:5173` and the backend will start on `http://localhost:5000`.
 
 > **Note:** If using MongoDB Atlas, update `MONGO_URI` in `server/.env` with your connection string.
-
-### 3. Start the frontend
-
-```bash
-cd client
-npm install
-npm run dev
-```
-
-The client will start on `http://localhost:5173` and proxies API requests to the backend.
 
 ## 🔌 API Endpoints
 

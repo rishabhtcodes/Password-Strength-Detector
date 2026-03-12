@@ -24,28 +24,28 @@
 
 /* ── Dark mode (default) custom properties ── */
 :root {
-  --_cyber-bg: #0a0e17;
-  --_cyber-card: #111827;
-  --_cyber-border: #1e293b;
+  --_cyber-bg: #03060a;
+  --_cyber-card: #080d17;
+  --_cyber-border: #131d2e;
   --_cyber-accent: #00ff88;
   --_cyber-accent-dim: #00cc6a;
   --_cyber-blue: #3b82f6;
   --_cyber-purple: #a855f7;
-  --_cyber-text: #e2e8f0;
-  --_cyber-muted: #64748b;
+  --_cyber-text: #f8fafc;
+  --_cyber-muted: #94a3b8;
 }
 
 /* ── Light mode overrides ── */
 :root.light {
-  --_cyber-bg: #f0f4f8;
-  --_cyber-card: #ffffff;
-  --_cyber-border: #d1d9e6;
-  --_cyber-accent: #059669;
+  --_cyber-bg: #e2e8f0;       /* Softer gray background */
+  --_cyber-card: #ffffff;     /* Pure white cards */
+  --_cyber-border: #cbd5e1;   /* Defined borders */
+  --_cyber-accent: #059669;   /* Emerald green accent */
   --_cyber-accent-dim: #047857;
   --_cyber-blue: #2563eb;
   --_cyber-purple: #7c3aed;
-  --_cyber-text: #1e293b;
-  --_cyber-muted: #64748b;
+  --_cyber-text: #0f172a;     /* Very dark text */
+  --_cyber-muted: #475569;    /* Dark gray muted text */
 }
 
 /* ── Global base styles ── */

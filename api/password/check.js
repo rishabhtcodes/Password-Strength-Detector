@@ -1,6 +1,6 @@
-const { connectDB } = require("../../_lib/db");
-const PasswordAnalysis = require("../../_lib/PasswordAnalysis");
-const { analyzePassword } = require("../../_lib/passwordStrength");
+const { connectDB } = require("../_lib/db");
+const PasswordAnalysis = require("../_lib/PasswordAnalysis");
+const { analyzePassword } = require("../_lib/passwordStrength");
 
 module.exports = async (req, res) => {
   // CORS handling

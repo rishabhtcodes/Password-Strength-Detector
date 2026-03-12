@@ -11,7 +11,7 @@ export default function PasswordChecklist({ rules, password }) {
 
   return (
     <div className="animate-slide-in">
-      <h3 className="mb-3 flex items-center gap-2 text-sm font-semibold text-white">
+      <h3 className="mb-3 flex items-center gap-2 text-sm font-semibold text-cyber-text">
         <svg
           className="h-4 w-4 text-cyber-accent"
           fill="none"

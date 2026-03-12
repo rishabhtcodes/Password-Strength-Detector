@@ -78,8 +78,8 @@ export default function PasswordGenerator({ onUsePassword }) {
   };
 
   return (
-    <div className="animate-slide-in rounded-2xl border border-cyber-border bg-cyber-card/60 p-5 backdrop-blur-sm">
-      <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold text-white">
+    <div className="animate-slide-in rounded-2xl border border-cyber-border bg-cyber-card/90 p-5 backdrop-blur-md">
+      <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold text-cyber-text">
         <svg
           className="h-4 w-4 text-cyber-purple"
           fill="none"

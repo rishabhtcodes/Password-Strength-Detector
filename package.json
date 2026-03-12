@@ -4,9 +4,14 @@
   "description": "Vercel deployment dependencies and scripts",
   "main": "api/index.js",
   "scripts": {
+    "start": "concurrently \"npm run start --prefix server\" \"npm run dev --prefix client\"",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "build": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "mongoose": "^8.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
